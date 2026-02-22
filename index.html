@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <link rel="stylesheet" href="calculator-styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Калькулятор</h1>
+      <input
+        class="mb-2"
+        type="number"
+        id="input1"
+        value="2"
+        placeholder="Введите число:"
+      />
+
+      <input
+        class="mb-2"
+        type="number"
+        id="input2"
+        value="2"
+        placeholder="Введoите число:"
+      />
+      <div class="d-flex">
+        <button class="btn green" id="plus">+</button>
+        <button class="btn red" id="minus">-</button>
+        <button class="btn blue" id="multiply">*</button>
+        <button class="btn yellow" id="divide">/</button>
+        <button class="btn purple" id="degree">^</button>
+      </div>
+      <div class="w-100">
+        <button class="btn-result" id="submit">Вычислить</button>
+      </div>
+      <div class="result">
+        <h2>Результат:</h2>
+        <p class="mb-0" id="result">4</p>
+      </div>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="secret"
+        >secret</a
+      >
+    </div>
+  </body>
+</html>
