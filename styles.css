@@ -1,165 +1,180 @@
 body {
-    background-color: rgb(42, 42, 42);
-    color: white;
+  background-color: rgb(42, 42, 42);
+  color: white;
 }
 
 .container {
+  margin: auto;
+  margin-top: 100px;
+  width: 400px;
+  text-align: center;
+}
+
+.container * {
+  border: none;
+  border-radius: 3px;
+  padding: 3px;
+  margin-bottom: 4px;
+}
+@media (max-width: 400px) {
+  .container {
     margin: auto;
     margin-top: 100px;
-    width: 400px;
+    width: 250px;
     text-align: center;
-}
-.container * {
-    border: none;
-    border-radius: 3px;
-    padding: 3px;
-    margin-bottom: 4px;
+    transition: all 0.2s;
+  }
 }
 .btn-result {
-    width: 100%;
-    height: 500px;
-    padding: 0;
-    margin-top: 7px;
-    cursor: pointer;
-    margin-top: none;
-    height: 27px;
-    background: rgba(11, 150, 175, 0);
-    border: 2px solid rgb(0, 200, 255);
-    transition: all .2s;
-    color: rgb(0, 200, 255);
+  width: 100%;
+  height: 500px;
+  padding: 0;
+  margin-top: 7px;
+  cursor: pointer;
+  margin-top: none;
+  height: 27px;
+  background: rgba(11, 150, 175, 0);
+  border: 2px solid rgb(0, 200, 255);
+  transition: all 0.2s;
+  color: rgb(0, 200, 255);
 }
 
- .btn-result:hover {
-     transition: all .2s;
-    background: rgb(0, 200, 255);
-    color: rgb(44, 44, 44) 
- }
-  .btn-result:active {
-     background: rgb(0, 200, 255);
-  }
+.btn-result:hover {
+  transition: all 0.2s;
+  background: rgb(0, 200, 255);
+  color: rgb(44, 44, 44);
+}
+.btn-result:active {
+  background: rgb(0, 200, 255);
+}
 
 .w-100 {
-    height: 30px;
-    margin-bottom: 10px;
+  height: 30px;
+  margin-bottom: 10px;
 }
 
 .mb-2 {
-    margin-bottom: 4px;
-    width: 390px;
+  margin-bottom: 4px;
+  width: 390px;
+}
+@media (max-width: 400px) {
+  .mb-2 {
+    width: 240px;
+    transition: all 0.2s;
+  }
 }
 .btn {
-    width: 90px;
-    height: 24px;
-    margin-right: 8px;
-    text-align: center;
-    border: none;
-    margin-top: 4px;
-    transition: all .2s;
-    cursor: pointer;
+  width: 90px;
+  height: 24px;
+  margin-right: 8px;
+  text-align: center;
+  border: none;
+  margin-top: 4px;
+  transition: all 0.2s;
+  cursor: pointer;
 }
 
 .btn:hover {
-    transition: all .2s;
+  transition: all 0.2s;
 }
 
 .btn:first-child {
-    margin-left: 8px;
+  margin-left: 8px;
 }
 .d-flex {
-    display: flex;
-    text-align: center;
-    justify-content: center;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 .result {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 .result h2 {
-    margin-top: 10px;
-    margin-bottom: 0;
-    height: 10px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  height: 10px;
 }
 .result p {
-    padding-bottom: 20px;
-    font-size: large;
+  padding-bottom: 20px;
+  font-size: large;
 }
 
 .green {
-    background: rgb(4, 209, 4);
-    
+  background: rgb(4, 209, 4);
 }
 .green:hover {
-    background: rgb(42, 164, 42);
+  background: rgb(42, 164, 42);
 }
 
 .green:active {
-    background: green;
+  background: green;
 }
 
 .red {
-    background: rgb(223, 7, 7);
+  background: rgb(223, 7, 7);
 }
 .red:hover {
-    background: rgb(201, 0, 0);
+  background: rgb(201, 0, 0);
 }
 
 .red:active {
-    background: rgb(177, 1, 1);
+  background: rgb(177, 1, 1);
 }
 
 .yellow {
-    background: rgb(224, 224, 7);
+  background: rgb(224, 224, 7);
 }
 
 .yellow:hover {
-    background: rgb(196, 196, 2);
+  background: rgb(196, 196, 2);
 }
 
 .yellow:active {
-    background: rgb(159, 159, 0);
+  background: rgb(159, 159, 0);
 }
 
 .blue {
-    background: rgb(7, 7, 225);
+  background: rgb(7, 7, 225);
 }
 
 .blue:hover {
-    background: rgb(1, 1, 202);
+  background: rgb(1, 1, 202);
 }
 
 .blue:active {
-    background: rgb(1, 1, 168);
+  background: rgb(1, 1, 168);
 }
 
 .purple {
-    background: rgb(186, 7, 186);
+  background: rgb(186, 7, 186);
 }
 
 .purple:hover {
-    background:rgb(149, 2, 149);
+  background: rgb(149, 2, 149);
 }
 .purple:active {
-    background:rgb(126, 1, 126);
+  background: rgb(126, 1, 126);
 }
 
 .secret {
-    width: 32px;
-    height:  15px;
-    text-decoration: none;
-    border: 2px solid rgb(129, 129, 129);
-    position: fixed;
-    top: 5px;
-    right: 5px;
-    color: rgb(149, 149, 149);
-    font-size: smaller;
-    cursor: pointer;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 1px 3px;
+  width: 32px;
+  height: 15px;
+  text-decoration: none;
+  border: 2px solid rgb(129, 129, 129);
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  color: rgb(149, 149, 149);
+  font-size: smaller;
+  cursor: pointer;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 1px 3px;
 }
 
 .secret:hover {
-    background: rgb(103, 103, 103);
+  background: rgb(103, 103, 103);
 }
 .secret:active {
-    background: #5f5f5f;
+  background: #5f5f5f;
 }
