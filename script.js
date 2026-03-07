@@ -7,22 +7,30 @@ const minusBtn = document.getElementById('minus')
 const multiplyBtn = document.getElementById('multiply')
 const divideBtn = document.getElementById('divide')
 const degreeBtn = document.getElementById('degree')
+const actionInput = document.getElementById('actionInput')
 let action = '+'
+
+resultElements.style.color = 'green'
 
 plusBtn.onclick = function () {
   action = '+'
+  actionInput.textContent = '+'
 }
 minusBtn.onclick = function () {
   action = '-'
+  actionInput.textContent = '-'
 }
 multiplyBtn.onclick = function () {
   action = '*'
+  actionInput.textContent = '*'
 }
 divideBtn.onclick = function () {
   action = '/'
+  actionInput.textContent = '/'
 }
 degreeBtn.onclick = function () {
   action = '**'
+  actionInput.textContent = '^'
 }
 
 function printResult(result) {
